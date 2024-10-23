@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pricing Table</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="pricing-table">
+        <div class="pricing-card">
+            <h3 class="plan-title">Basic</h3>
+            <p class="price">$9<span>/mo</span></p>
+            <ul class="features">
+                <li>10 GB Storage</li>
+                <li>100 Email Accounts</li>
+                <li>24/7 Support</li>
+            </ul>
+            <button class="select-plan" onclick="selectPlan('Basic')">Choose Plan</button>
+        </div>
+
+        <div class="pricing-card popular">
+            <h3 class="plan-title">Standard</h3>
+            <p class="price">$29<span>/mo</span></p>
+            <ul class="features">
+                <li>50 GB Storage</li>
+                <li>500 Email Accounts</li>
+                <li>24/7 Priority Support</li>
+            </ul>
+            <button class="select-plan" onclick="selectPlan('Standard')">Choose Plan</button>
+        </div>
+
+        <div class="pricing-card">
+            <h3 class="plan-title">Premium</h3>
+            <p class="price">$49<span>/mo</span></p>
+            <ul class="features">
+                <li>200 GB Storage</li>
+                <li>Unlimited Email Accounts</li>
+                <li>Dedicated Support</li>
+            </ul>
+            <button class="select-plan" onclick="selectPlan('Premium')">Choose Plan</button>
+        </div>
+    </div>
+
+    <div id="selected-plan" class="selected-plan">
+        <p id="plan-message"></p>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
